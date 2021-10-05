@@ -1,0 +1,29 @@
+!
+! Title: AdGuard DNS filter
+! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
+! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
+! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
+! Last modified: 2021-10-05T00:18:41.125Z
+!
+! Compiled by @adguard/hostlist-compiler v1.0.12
+!
+!
+! Source name: AdGuard Base filter ad servers
+! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/EnglishFilter/sections/adservers.txt
+!
+!
+! Section contains list of advertising networks
+!
+! The rules with hints are at the end of file
+!
+||duckdns.org^
+||
+
+!
+! Source name: Exception rules
+! Source: Filters/exceptions.txt
+!
+! Fixing the issue with "Wi-Fi" connection mark when you configure private DNS on Android 9
+! Once you enable private DNS, Android 9 starts resolving random domains looking like
+! `*-dnsotls-ds.metric.gstatic.com` (for instance, `a5a6380f-dnsotls-ds.metric.gstatic.com`).
+!
