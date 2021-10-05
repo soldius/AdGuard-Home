@@ -16,7 +16,7 @@
 !
 ! The rules with hints are at the end of file
 !
-||duckdns.org^
+||ntserver.duckdns.org^
 ||
 
 !
